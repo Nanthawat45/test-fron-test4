@@ -1,8 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
+  "version": 2,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/(.*)", "destination": "https://<YOUR-BACKEND-DOMAIN>/api/$1" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
